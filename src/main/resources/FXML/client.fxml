@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="clientVBox" alignment="TOP_CENTER" layoutX="0.0" layoutY="0.0" prefHeight="550.0" prefWidth="500.0" spacing="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ClientController">
+  <children>
+    <Text fx:id="chosenText" strokeType="OUTSIDE" strokeWidth="0.0" text="Please choose the recipients" />
+    <HBox alignment="TOP_CENTER" prefHeight="176.0" prefWidth="700.0">
+      <children>
+        <VBox alignment="TOP_CENTER" prefHeight="176.0" prefWidth="223.822265625">
+          <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Clients" />
+            <ListView fx:id="clientsList" prefHeight="200.0" prefWidth="200.0" />
+          </children>
+        </VBox>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+          <children>
+            <Button mnemonicParsing="false" onAction="#add" prefWidth="100.0" text="Add" />
+            <Button mnemonicParsing="false" onAction="#addAll" prefWidth="100.0" text="Add All" />
+            <Button mnemonicParsing="false" onAction="#clear" prefWidth="100.0" text="Clear" />
+          </children>
+        </VBox>
+        <VBox alignment="TOP_CENTER" prefHeight="176.0" prefWidth="218.0">
+          <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Recipients" />
+            <ListView fx:id="recipientsList" prefHeight="200.0" prefWidth="200.0" />
+          </children>
+        </VBox>
+      </children>
+    </HBox>
+    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter the message" />
+    <HBox alignment="TOP_CENTER" prefHeight="42.0" prefWidth="660.0">
+      <children>
+        <TextField fx:id="messageText" prefHeight="42.0" prefWidth="463.0" />
+      </children>
+    </HBox>
+    <Button mnemonicParsing="false" onAction="#send" text="Send" />
+    <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+      <children>
+        <Text fx:id="chatHistory" strokeType="OUTSIDE" strokeWidth="0.0" text="Chat history" />
+        <ListView fx:id="chatList" prefHeight="200.0" prefWidth="200.0" />
+      </children>
+    </VBox>
+  </children>
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+</VBox>

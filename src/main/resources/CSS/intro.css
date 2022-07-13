@@ -1,0 +1,16 @@
+#intro{
+	-fx-background-color: #B0F8EC;
+}
+
+#clientVBox{
+	-fx-background-color: #B0F8EC;
+}
+
+#serverVBox{
+	-fx-background-color: #B0F8EC;
+}
+
+.button{
+	-fx-background-color: #4F55F1;
+	-fx-text-fill: white;
+}

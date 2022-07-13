@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="intro"
+		fx:controller="IntroController"
+		alignment="CENTER" layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0" spacing="40.0"
+		xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Please choose server or client">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Text>
+    <Button fx:id="serverButton" mnemonicParsing="false" prefHeight="98.0" prefWidth="151.0" text="The Server" onAction="#serverScene">
+      <font>
+        <Font size="24.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button fx:id="clientButton" font="$x1" mnemonicParsing="false" prefHeight="98.0" prefWidth="151.0" text="The Client" onAction="#clientScene"/>
+  </children>
+</VBox>
